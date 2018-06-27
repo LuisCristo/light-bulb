@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>The Amazing Light Bulb</title>
+</head>
+
+<style>
+body	{background-color: black;}
+h1	{color: aqua;}
+p	{color: red;}
+</style>
+
+<body>
+	<h1>The Amazing Lightbulb</h1>
+
+
+	<p><img onclick="flipSwitch(this)" src="https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=8793426">
+	</p>
+
+
+	<p>click on the light bulb to turn on/off the light.</p>
+	<script>
+		var isOn = false
+		function flipSwitch(bulb) {
+			if(isOn) {
+				bulb.src = "https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=8793426"
+				isOn = false;
+			}
+			else {
+				bulb.src = "https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=8793412"
+				isOn = true;
+			}
+			console.log(isOn);
+		}
+	</script>
+</body>
+</html>
